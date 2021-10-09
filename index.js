@@ -9,7 +9,7 @@ app.get("/", (req,res) => {
 //loading the css file
 app.use(express.static(__dirname + "/public"));
 app.use("*/css", express.static(__dirname + "public/css"));
-app.use("*/images", express.static("public/images"));
+app.use("*/images", express.static(__dirname + "public/images"));
 
 app.listen(8080,() => {
 	console.log("Documentation is listening on 8080!");

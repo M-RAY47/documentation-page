@@ -3,6 +3,13 @@ body {
 	color: rgb(72, 98, 121);
     font-weight: 100;
 }
+
+a{
+    text-decoration:none
+}
+a:hover {
+    color: aqua;
+}
 /* #navbar {
     position: fixed;
     min-width: 290px;

@@ -20,7 +20,9 @@ a:hover {
     border-right: solid;
     border-color: rgba(0, 22, 22, 0.4);
 } */
-
+header {
+    font-size: 1.8em;
+}
 
 #main-doc {
     position: absolute;

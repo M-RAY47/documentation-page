@@ -72,8 +72,11 @@
 				<h3 href="https://pkg.go.dev/std">Package Documentation</h3>
 				<p>The documentation for the Go standard library.</p>
 				<h3>Command Documentation</h3>
-				<p>The documentation for the Go tools</p>
-				<p>.........</p>
+				<p>There is a suite of programs to build and process Go source code. Instead of being run directly, programs in the suite are usually invoked by the go program.</p>
+				<p>The most common way to run these programs is as a subcommand of the go program, for instance as go fmt. Run like this, the command operates on complete packages of Go source code, with the go program invoking the underlying binary with arguments appropriate to package-level processing.</p>
+				<p>The programs can also be run as stand-alone binaries, with unmodified arguments, using the go tool subcommand, such as <i>go tool cgo</i>. For most commands this is mainly useful for debugging. Some of the commands, such as pprof, are accessible only through the go tool subcommand.</p>
+				<h3 href="">Language Specification</h3>
+				<p>The official Go Language specification</p>
 				<p>.........</p>
 			</section>
 			

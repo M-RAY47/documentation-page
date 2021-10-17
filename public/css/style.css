@@ -23,10 +23,16 @@ a:hover {
 header {
     font-size: 1.8em;
 }
+h3 {
+    font-size: 1.2em;
+}
 
 #main-doc {
     position: absolute;
     margin-left: 310px;
     padding: 20px;
     margin-bottom: 110px;
+}
+.nav-link {
+    font-size: 1.5em;
 }

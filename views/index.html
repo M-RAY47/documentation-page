@@ -5,26 +5,30 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="/css/style.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/> -->
+		<!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 		<title>Documentation</title>
 	</head>
 	<body>
-		<nav id="navbar navbar-default navbar-fixed-top" role="navigation"> 
-			<header>Go Documentation</header>
-			<ul>
-				<li><a class="nav-link" href="#introduction">Introduction</a></li>
-				<br/>
-				<li><a class="nav-link" href="#understanding">Using and understanding Go</a></li>
-				<br/>
-				<li><a class="nav-link" href="#references">References</a></li>
-				<br/>
-				<li><a class="nav-link" href="#codewalks">Codewalks</a></li>
-				<br/>
-				<li><a class="nav-link" href="#blog">From the Go Blog</a></li>
-				<br/>
-				<li><a class="nav-link" href="#talks">Talks </a></li>
-			</ul>
-		</nav>
+		<aside class="bd-sidbar list-unstyled" id="">
+			<nav id="navbar "> 
+				<header>Go Documentation</header>
+				<ul>
+					<li><a class="nav-link" href="#introduction">Introduction</a></li>
+					<br/>
+					<li><a class="nav-link" href="#understanding">Using and understanding Go</a></li>
+					<br/>
+					<li><a class="nav-link" href="#references">References</a></li>
+					<br/>
+					<li><a class="nav-link" href="#codewalks">Codewalks</a></li>
+					<br/>
+					<li><a class="nav-link" href="#blog">From the Go Blog</a></li>
+					<br/>
+					<li><a class="nav-link" href="#talks">Talks </a></li>
+				</ul>
+			</nav>
+		</aside>
 
 		<main id="main-doc">
 			<section class="main-section" id="intrduction">
@@ -40,9 +44,9 @@
 						typed, compiled language that feels like a dynamically typed, interpreted language.
 					</p>
 
-					<h3><a href="https://golang.org/doc/install">Installing Go</a></h3>
+					<h4><a href="https://golang.org/doc/install">Installing Go</a></h4>
 					<p>Instructions for downloading and installing Go.</p>
-					<h3><a href="https://golang.org/doc/tutorial/getting-started">Tutorial: Getting started</a></h3>
+					<h4><a href="https://golang.org/doc/tutorial/getting-started">Tutorial: Getting started</a></h4>
 					<p>
 						In this tutorial, you'll get a brief introduction to Go programming. Along the way, you will:
 					</p>
@@ -67,26 +71,26 @@
 				<header>
 					Using and understanding Go
 				</header>
-				<h3><a href="https://golang.org/doc/effective_go">Effective Go</a></h3>
-				<p>A document that gives tips for writing clear, idiomatic Go code. A must read for any new Go programmer. It augments the tour and the language specification, both of which should be read first.</p>
-				<h3>Editor plugins and IDEs</h3>	
-				<p>This document lists commonly used editor plugins and IDEs from the Go ecosystem that make Go development more productive and seamless. A comprehensive list of editor support and IDEs for Go development is available at <a href="https://github.com/golang/go/wiki/IDEsAndTextEditorPlugins">the wiki</a>.</p>
-				<h4>Options</h4>
-				<p>The Go ecosystem provides a variety of editor plugins and IDEs to enhance your day-to-day editing, navigation, testing, and debugging experience.</p>
-				<ul>
-					<li><a href="https://marketplace.visualstudio.com/items?itemName=golang.go">Visual Studio Code</a>: Go extention support for the Go programming language </li>
-					<li><a href="https://www.jetbrains.com/go/">GoLang</a>: GoLand is distributed either as a standalone IDE or as a plugin for IntelliJ IDEA Ultimate</li>
-					<li><a href="https://github.com/fatih/vim-go">vim</a>: vim-go plugin provides Go programming language support</li>
-				</ul>
-				<p>Note that these are only a few top solutions; a more comprehensive community-maintained list of <a href="https://github.com/golang/go/wiki/IDEsAndTextEditorPlugins">IDEs and text editor plugins</a> is available at the Wiki.</p>
-							
+				<article>
+					<h4><a href="https://golang.org/doc/effective_go">Effective Go</a></h4>
+					<p>A document that gives tips for writing clear, idiomatic Go code. A must read for any new Go programmer. It augments the tour and the language specification, both of which should be read first.</p>
+					<h4>Editor plugins and IDEs</h4>	
+					<p>This document lists commonly used editor plugins and IDEs from the Go ecosystem that make Go development more productive and seamless. A comprehensive list of editor support and IDEs for Go development is available at <a href="https://github.com/golang/go/wiki/IDEsAndTextEditorPlugins">the wiki</a>.</p>
+					<h4>Options</h4>
+					<p>The Go ecosystem provides a variety of editor plugins and IDEs to enhance your day-to-day editing, navigation, testing, and debugging experience.</p>
+					<ul>
+						<li><a href="https://marketplace.visualstudio.com/items?itemName=golang.go">Visual Studio Code</a>: Go extention support for the Go programming language </li>
+						<li><a href="https://www.jetbrains.com/go/">GoLang</a>: GoLand is distributed either as a standalone IDE or as a plugin for IntelliJ IDEA Ultimate</li>
+						<li><a href="https://github.com/fatih/vim-go">vim</a>: vim-go plugin provides Go programming language support</li>
+					</ul>
+					<p>Note that these are only a few top solutions; a more comprehensive community-maintained list of <a href="https://github.com/golang/go/wiki/IDEsAndTextEditorPlugins">IDEs and text editor plugins</a> is available at the Wiki.</p>
+				</article>
 			</section>
 
 			<section class="main-section" id="references">
 				<header>References</header>
 				<article class="">
-
-					<h3><a href="https://pkg.go.dev/std">Package Documentation</a></h3>
+					<h4><a href="https://pkg.go.dev/std">Package Documentation</a></h4>
 					<p>The documentation for the Go standard library.</p>
 					<h3>Command Documentation</h3>
 					<p>There is a suite of programs to build and process Go source code. Instead of being run directly, programs in the suite are usually invoked by the go program.</p>
@@ -94,60 +98,64 @@
 					<p>The programs can also be run as stand-alone binaries, with unmodified arguments, using the go tool subcommand, such as <i>go tool cgo</i>. For most commands this is mainly useful for debugging. Some of the commands, such as pprof, are accessible only through the go tool subcommand.</p>
 					<p>Finally the <code>fmt</code> and <code>godoc</code> commands are installed as regular binaries called gofmt and godoc because they are so often referenced.</p>
 					<p>Click on the links for more documentation, invocation methods, and usage details.</p>
-					<tbody>
-						<tr>
-							<th>Name</th>
-							<th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
-							<th>Synopsis</th>
-						</tr>
-						<tr>
-							<td><a href="https://pkg.go.dev/cmd/go">go</a></td>
-							<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-							<td>
-								The <code>go</code> program manages Go source code and runs the other commands listed here. See the command docs for usage details.
-							</td>
-						</tr>
-						<tr>
-							<td><a href="https://pkg.go.dev/cmd/cgo">cgo</a></td>
-							<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-							<td>Cgo enables the creation of Go packages that call C code.</td>
-						</tr>
-						<tr>
-							<td><a href="https://pkg.go.dev/cmd/cover">cover</a></td>
-							<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-							<td>
-								Cover is a program for creating and analyzing the coverage profiles generated by <code>"go test -coverprofile"</code>.
-							</td>
-						</tr>
-						<tr>
-							<td><a href="https://pkg.go.dev/cmd/fix">fix</a></td>
-							<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-							<td>
-								Fix finds Go programs that use old features of the language and libraries and rewrites them to use newer ones.
-							</td>
-						</tr>
-						<tr>
-							<td><a href="https://pkg.go.dev/cmd/fmt">fmt</a></td>
-							<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-							<td>
-								Fmt formats Go packages, it is also available as an independent <code>gofmt</code> command with more general options.
-							</td>
-						</tr>
-						<tr>
-							<td><a href="https://pkg.go.dev/cmd/godoc">godoc</a></td>
-							<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-							<td>
-								Godoc extracts and generates documentation for Go packages.
-							</td>
-						</tr>
-						<tr>
-							<td><a href="https://pkg.go.dev/cmd/vet">vet</a></td>
-							<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-							<td>
-								Vet examines Go source code and reports suspicious constructs, such as Printf calls whose arguments do not align with the format string.
-							</td>
-						</tr>
-					</tbody>
+					<table>
+						<th>
+							<tr>
+								<th>Name</th>
+								<th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+								<th>Synopsis</th>
+							</tr>
+						</th>
+						<tbody>
+							<tr>
+								<td><a href="https://pkg.go.dev/cmd/go">go</a></td>
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+								<td>
+									The <code>go</code> program manages Go source code and runs the other commands listed here. See the command docs for usage details.
+								</td>
+							</tr>
+							<tr>
+								<td><a href="https://pkg.go.dev/cmd/cgo">cgo</a></td>
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+								<td>Cgo enables the creation of Go packages that call C code.</td>
+							</tr>
+							<tr>
+								<td><a href="https://pkg.go.dev/cmd/cover">cover</a></td>
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+								<td>
+									Cover is a program for creating and analyzing the coverage profiles generated by <code>"go test -coverprofile"</code>.
+								</td>
+							</tr>
+							<tr>
+								<td><a href="https://pkg.go.dev/cmd/fix">fix</a></td>
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+								<td>
+									Fix finds Go programs that use old features of the language and libraries and rewrites them to use newer ones.
+								</td>
+							</tr>
+							<tr>
+								<td><a href="https://pkg.go.dev/cmd/fmt">fmt</a></td>
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+								<td>
+									Fmt formats Go packages, it is also available as an independent <code>gofmt</code> command with more general options.
+								</td>
+							</tr>
+							<tr>
+								<td><a href="https://pkg.go.dev/cmd/godoc">godoc</a></td>
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+								<td>
+									Godoc extracts and generates documentation for Go packages.
+								</td>
+							</tr>
+							<tr>
+								<td><a href="https://pkg.go.dev/cmd/vet">vet</a></td>
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+								<td>
+									Vet examines Go source code and reports suspicious constructs, such as Printf calls whose arguments do not align with the format string.
+								</td>
+							</tr>
+						</tbody>
+					</table>
 					<p>This is an abridged list. See the full command reference for documentation of the compilers and more.</p>
 					<h3 href="https://golang.org/ref/spec">Language Specification</h3>
 					<p>The official Go Language specification</p>

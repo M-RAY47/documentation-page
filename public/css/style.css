@@ -8,8 +8,16 @@ body {
 .diviser {
     display: grid;
     grid-template-columns: minmax(300px, auto) 1fr;
-    grid-template-areas: "navbar mainContent";
+    grid-template-areas: "navbar" "mainContent";
     grid-gap: 20px;
+}
+
+@media screenand (max-width: 750px) {
+    .diviser {
+        grid-template-columns: 1fr;
+        grid-template-areas: "navbar" "mainContent;"
+    }
+    
 }
 
 a{
@@ -19,6 +27,7 @@ a:hover {
     color: rgb(9, 155, 155);
 }
 #navbar {
+    display: inline-block;
     grid-area: navbar;
     position: fixed;
     border-right: solid;
@@ -39,10 +48,10 @@ header {
     margin: 10px;
 }
 
-code {
+/* code {
     background-color: #ccc;
     display: block;
-}
+} */
 #main-doc header {
     text-align: left;
     margin: 0px;

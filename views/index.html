@@ -11,167 +11,159 @@
 		<title>Documentation</title>
 	</head>
 	<body>
-		<aside class="bd-sidbar list-unstyled" id="">
+		<div class="diviser" id="">
 			<nav id="navbar "> 
 				<header>Go Documentation</header>
-				<ul>
-					<li><a class="nav-link" href="#introduction">Introduction</a></li>
-					<br/>
-					<li><a class="nav-link" href="#understanding">Using and understanding Go</a></li>
-					<br/>
-					<li><a class="nav-link" href="#references">References</a></li>
-					<br/>
-					<li><a class="nav-link" href="#codewalks">Codewalks</a></li>
-					<br/>
-					<li><a class="nav-link" href="#blog">From the Go Blog</a></li>
-					<br/>
-					<li><a class="nav-link" href="#talks">Talks </a></li>
-				</ul>
+				<a class="nav-link" href="#introduction">Introduction</a>
+				<a class="nav-link" href="#understanding">Using and understanding Go</a>
+				<a class="nav-link" href="#references">References</a>
+				<a class="nav-link" href="#codewalks">Codewalks</a>
+				<a class="nav-link" href="#blog">From the Go Blog</a>
+				<a class="nav-link" href="#talks">Talks </a>
 			</nav>
-		</aside>
-
-		<main id="main-doc">
-			<section class="main-section" id="intrduction">
-				<header>
-					Introduction
-				</header>
-				<article>
-					<p>The Go programming language is an open source project to make programmers more productive.</p>
-					<p>Go is expressive, concise, clean, and efficient. Its concurrency mechanisms make it easy to write 
-						programs that get the most out of multicore and networked machines, while its novel type system 
-						enables flexible and modular program construction. Go compiles quickly to machine code yet has 
-						the convenience of garbage collection and the power of run-time reflection. It's a fast, statically 
-						typed, compiled language that feels like a dynamically typed, interpreted language.
-					</p>
-
-					<h4><a href="https://golang.org/doc/install">Installing Go</a></h4>
-					<p>Instructions for downloading and installing Go.</p>
-					<h4><a href="https://golang.org/doc/tutorial/getting-started">Tutorial: Getting started</a></h4>
-					<p>
-						In this tutorial, you'll get a brief introduction to Go programming. Along the way, you will:
-					</p>
-					<h4>Write some code</h4>
-					<p>Get started with Hello World.</p>
-					<ol>
-						<li>
-							open a command prompt and cd to your gome directory.
-
-						</li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ol>
-				</article>
-						
-			</section>
-
-			<section class="main-section" id="understanding">
-				<header>
-					Using and understanding Go
-				</header>
-				<article>
-					<h4><a href="https://golang.org/doc/effective_go">Effective Go</a></h4>
-					<p>A document that gives tips for writing clear, idiomatic Go code. A must read for any new Go programmer. It augments the tour and the language specification, both of which should be read first.</p>
-					<h4>Editor plugins and IDEs</h4>	
-					<p>This document lists commonly used editor plugins and IDEs from the Go ecosystem that make Go development more productive and seamless. A comprehensive list of editor support and IDEs for Go development is available at <a href="https://github.com/golang/go/wiki/IDEsAndTextEditorPlugins">the wiki</a>.</p>
-					<h4>Options</h4>
-					<p>The Go ecosystem provides a variety of editor plugins and IDEs to enhance your day-to-day editing, navigation, testing, and debugging experience.</p>
-					<ul>
-						<li><a href="https://marketplace.visualstudio.com/items?itemName=golang.go">Visual Studio Code</a>: Go extention support for the Go programming language </li>
-						<li><a href="https://www.jetbrains.com/go/">GoLang</a>: GoLand is distributed either as a standalone IDE or as a plugin for IntelliJ IDEA Ultimate</li>
-						<li><a href="https://github.com/fatih/vim-go">vim</a>: vim-go plugin provides Go programming language support</li>
-					</ul>
-					<p>Note that these are only a few top solutions; a more comprehensive community-maintained list of <a href="https://github.com/golang/go/wiki/IDEsAndTextEditorPlugins">IDEs and text editor plugins</a> is available at the Wiki.</p>
-				</article>
-			</section>
-
-			<section class="main-section" id="references">
-				<header>References</header>
-				<article class="">
-					<h4><a href="https://pkg.go.dev/std">Package Documentation</a></h4>
-					<p>The documentation for the Go standard library.</p>
-					<h3>Command Documentation</h3>
-					<p>There is a suite of programs to build and process Go source code. Instead of being run directly, programs in the suite are usually invoked by the go program.</p>
-					<p>The most common way to run these programs is as a subcommand of the go program, for instance as go fmt. Run like this, the command operates on complete packages of Go source code, with the go program invoking the underlying binary with arguments appropriate to package-level processing.</p>
-					<p>The programs can also be run as stand-alone binaries, with unmodified arguments, using the go tool subcommand, such as <i>go tool cgo</i>. For most commands this is mainly useful for debugging. Some of the commands, such as pprof, are accessible only through the go tool subcommand.</p>
-					<p>Finally the <code>fmt</code> and <code>godoc</code> commands are installed as regular binaries called gofmt and godoc because they are so often referenced.</p>
-					<p>Click on the links for more documentation, invocation methods, and usage details.</p>
-					<table>
-						<th>
-							<tr>
-								<th>Name</th>
-								<th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
-								<th>Synopsis</th>
-							</tr>
-						</th>
-						<tbody>
-							<tr>
-								<td><a href="https://pkg.go.dev/cmd/go">go</a></td>
-								<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-								<td>
-									The <code>go</code> program manages Go source code and runs the other commands listed here. See the command docs for usage details.
-								</td>
-							</tr>
-							<tr>
-								<td><a href="https://pkg.go.dev/cmd/cgo">cgo</a></td>
-								<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-								<td>Cgo enables the creation of Go packages that call C code.</td>
-							</tr>
-							<tr>
-								<td><a href="https://pkg.go.dev/cmd/cover">cover</a></td>
-								<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-								<td>
-									Cover is a program for creating and analyzing the coverage profiles generated by <code>"go test -coverprofile"</code>.
-								</td>
-							</tr>
-							<tr>
-								<td><a href="https://pkg.go.dev/cmd/fix">fix</a></td>
-								<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-								<td>
-									Fix finds Go programs that use old features of the language and libraries and rewrites them to use newer ones.
-								</td>
-							</tr>
-							<tr>
-								<td><a href="https://pkg.go.dev/cmd/fmt">fmt</a></td>
-								<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-								<td>
-									Fmt formats Go packages, it is also available as an independent <code>gofmt</code> command with more general options.
-								</td>
-							</tr>
-							<tr>
-								<td><a href="https://pkg.go.dev/cmd/godoc">godoc</a></td>
-								<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-								<td>
-									Godoc extracts and generates documentation for Go packages.
-								</td>
-							</tr>
-							<tr>
-								<td><a href="https://pkg.go.dev/cmd/vet">vet</a></td>
-								<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-								<td>
-									Vet examines Go source code and reports suspicious constructs, such as Printf calls whose arguments do not align with the format string.
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<p>This is an abridged list. See the full command reference for documentation of the compilers and more.</p>
-					<h3 href="https://golang.org/ref/spec">Language Specification</h3>
-					<p>The official Go Language specification</p>
-					<h3><a href="https://golang.org/ref/mod">Go module reference</a></h3>
-					<p>A detailed reference manual for Go's dependency management system.</p>
-					<h3><a href="https://golang.org/doc/modules/gomod-ref">go.mod file reference</a></h3>
-					<h3><a href="https://golang.org/ref/mem">The Go Memory Model</a></h3>
-					<p>
-						A document that specifies the conditions under which reads of a variable in one goroutine can be guaranteed to observe values produced by writes to the same variable in a different goroutine.
-					</p>
-					<h3><a href="https://golang.org/doc/devel/release">Release History</a></h3>
-					<p>A summary of the changes between Go releases.</p>
-				</article>
-			</section>
 			
-			<section class="main-section" id="codewalks">
+			<main id="main-doc">
+				<section class="main-section" id="intrduction">
+					<header>
+						Introduction
+					</header>
+					<article>
+						<p>The Go programming language is an open source project to make programmers more productive.</p>
+						<p>Go is expressive, concise, clean, and efficient. Its concurrency mechanisms make it easy to write 
+							programs that get the most out of multicore and networked machines, while its novel type system 
+							enables flexible and modular program construction. Go compiles quickly to machine code yet has 
+							the convenience of garbage collection and the power of run-time reflection. It's a fast, statically 
+							typed, compiled language that feels like a dynamically typed, interpreted language.
+						</p>
+						
+						<h4><a href="https://golang.org/doc/install">Installing Go</a></h4>
+						<p>Instructions for downloading and installing Go.</p>
+						<h4><a href="https://golang.org/doc/tutorial/getting-started">Tutorial: Getting started</a></h4>
+						<p>
+							In this tutorial, you'll get a brief introduction to Go programming. Along the way, you will:
+						</p>
+						<h4>Write some code</h4>
+						<p>Get started with Hello World.</p>
+						<ol>
+							<li>
+								open a command prompt and cd to your gome directory.
+								
+							</li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ol>
+					</article>
+					
+				</section>
+				
+				<section class="main-section" id="understanding">
+					<header>
+						Using and understanding Go
+					</header>
+					<article>
+						<h4><a href="https://golang.org/doc/effective_go">Effective Go</a></h4>
+						<p>A document that gives tips for writing clear, idiomatic Go code. A must read for any new Go programmer. It augments the tour and the language specification, both of which should be read first.</p>
+						<h4>Editor plugins and IDEs</h4>	
+						<p>This document lists commonly used editor plugins and IDEs from the Go ecosystem that make Go development more productive and seamless. A comprehensive list of editor support and IDEs for Go development is available at <a href="https://github.com/golang/go/wiki/IDEsAndTextEditorPlugins">the wiki</a>.</p>
+						<h4>Options</h4>
+						<p>The Go ecosystem provides a variety of editor plugins and IDEs to enhance your day-to-day editing, navigation, testing, and debugging experience.</p>
+						<ul>
+							<li><a href="https://marketplace.visualstudio.com/items?itemName=golang.go">Visual Studio Code</a>: Go extention support for the Go programming language </li>
+							<li><a href="https://www.jetbrains.com/go/">GoLang</a>: GoLand is distributed either as a standalone IDE or as a plugin for IntelliJ IDEA Ultimate</li>
+							<li><a href="https://github.com/fatih/vim-go">vim</a>: vim-go plugin provides Go programming language support</li>
+						</ul>
+						<p>Note that these are only a few top solutions; a more comprehensive community-maintained list of <a href="https://github.com/golang/go/wiki/IDEsAndTextEditorPlugins">IDEs and text editor plugins</a> is available at the Wiki.</p>
+					</article>
+				</section>
+				
+				<section class="main-section" id="references">
+					<header>References</header>
+					<article class="">
+						<h4><a href="https://pkg.go.dev/std">Package Documentation</a></h4>
+						<p>The documentation for the Go standard library.</p>
+						<h3>Command Documentation</h3>
+						<p>There is a suite of programs to build and process Go source code. Instead of being run directly, programs in the suite are usually invoked by the go program.</p>
+						<p>The most common way to run these programs is as a subcommand of the go program, for instance as go fmt. Run like this, the command operates on complete packages of Go source code, with the go program invoking the underlying binary with arguments appropriate to package-level processing.</p>
+						<p>The programs can also be run as stand-alone binaries, with unmodified arguments, using the go tool subcommand, such as <i>go tool cgo</i>. For most commands this is mainly useful for debugging. Some of the commands, such as pprof, are accessible only through the go tool subcommand.</p>
+						<p>Finally the <code>fmt</code> and <code>godoc</code> commands are installed as regular binaries called gofmt and godoc because they are so often referenced.</p>
+						<p>Click on the links for more documentation, invocation methods, and usage details.</p>
+						<table>
+							<th>
+								<tr>
+									<th>Name</th>
+									<th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+									<th>Synopsis</th>
+								</tr>
+							</th>
+							<tbody>
+								<tr>
+									<td><a href="https://pkg.go.dev/cmd/go">go</a></td>
+									<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+									<td>
+										The <code>go</code> program manages Go source code and runs the other commands listed here. See the command docs for usage details.
+									</td>
+								</tr>
+								<tr>
+									<td><a href="https://pkg.go.dev/cmd/cgo">cgo</a></td>
+									<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+									<td>Cgo enables the creation of Go packages that call C code.</td>
+								</tr>
+								<tr>
+									<td><a href="https://pkg.go.dev/cmd/cover">cover</a></td>
+									<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+									<td>
+										Cover is a program for creating and analyzing the coverage profiles generated by <code>"go test -coverprofile"</code>.
+									</td>
+								</tr>
+								<tr>
+									<td><a href="https://pkg.go.dev/cmd/fix">fix</a></td>
+									<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+									<td>
+										Fix finds Go programs that use old features of the language and libraries and rewrites them to use newer ones.
+									</td>
+								</tr>
+								<tr>
+									<td><a href="https://pkg.go.dev/cmd/fmt">fmt</a></td>
+									<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+									<td>
+										Fmt formats Go packages, it is also available as an independent <code>gofmt</code> command with more general options.
+									</td>
+								</tr>
+								<tr>
+									<td><a href="https://pkg.go.dev/cmd/godoc">godoc</a></td>
+									<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+									<td>
+										Godoc extracts and generates documentation for Go packages.
+									</td>
+								</tr>
+								<tr>
+									<td><a href="https://pkg.go.dev/cmd/vet">vet</a></td>
+									<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+									<td>
+										Vet examines Go source code and reports suspicious constructs, such as Printf calls whose arguments do not align with the format string.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>This is an abridged list. See the full command reference for documentation of the compilers and more.</p>
+						<h3 href="https://golang.org/ref/spec">Language Specification</h3>
+						<p>The official Go Language specification</p>
+						<h3><a href="https://golang.org/ref/mod">Go module reference</a></h3>
+						<p>A detailed reference manual for Go's dependency management system.</p>
+					    <h3><a href="https://golang.org/doc/modules/gomod-ref">go.mod file reference</a></h3>
+					    <h3><a href="https://golang.org/ref/mem">The Go Memory Model</a></h3>
+					    <p>
+							A document that specifies the conditions under which reads of a variable in one goroutine can be guaranteed to observe values produced by writes to the same variable in a different goroutine.
+					    </p>
+					    <h3><a href="https://golang.org/doc/devel/release">Release History</a></h3>
+					    <p>A summary of the changes between Go releases.</p>
+				    </article>
+			    </section>
+			
+			    <section class="main-section" id="codewalks">
 				
 				<header>Codewalks</header>
 				<article>
@@ -182,88 +174,89 @@
 						<li><a href="https://golang.org/doc/codewalk/sharemem/">Generating arbitrary text: a Markov chain algorithm</a></li>
 					</ul>
 				</article>
-			</section>
+			    </section>
 			
-			<section class="main-section" id="blog">
-				<header>From the Go Blog</header>
-				<article>
-					<p>The <span><a href="https://go.dev/blog/">official blog of the Go project</a></span>, featuring news and in-depth articles by the Go team and guests.</p>
-					<h4>Language</h4>
-					<ul>
-						<li><a href="https://go.dev/blog/json-rpc">JSON-RPC: a tale of interfaces</a></li>
-						<li><a href="https://go.dev/blog/declaration-syntax">Go's Declaration Syntax</a></li>
-						<li><a href="https://go.dev/blog/defer-panic-and-recover">Defer, Panic, and Recover</a></li>
-						<li><a href="https://go.dev/blog/concurrency-timeouts">Go Concurrency Patterns: Timing out, moving on</a></li>
-						<li><a href="https://go.dev/blog/slices-intro">Go Slices: usage and internals</a></li>
-						<li><a href="https://go.dev/blog/gif-decoder">A GIF decoder: an exercise in Go interfaces</a></li>
-						<li><a href="https://go.dev/blog/error-handling-and-go">Error Handling and Go</a></li>
-						<li><a href="https://go.dev/blog/organizing-go-code">Organizing Go code</a></li>
-					</ul>
-					<h4>Packages</h4>
-					<ul>
-						<li><a href="https://go.dev/blog/json">JSON and Go</a> - using the <a href="https://pkg.go.dev/encoding/json">json</a> package.</li>
-						<li><a href="https://go.dev/blog/gob">Gobs of data</a> - the design and use of the <a href="https://pkg.go.dev/encoding/gob">gob</a> package.</li>
-						<li><a href="https://go.dev/blog/laws-of-reflection">The Laws of Reflection</a> - the fundamentals of the <a href="https://pkg.go.dev/reflect">reflect</a> package.</li>
-						<li><a href="https://go.dev/blog/image">The Go image package</a> - the fundamentals of the <a href="https://pkg.go.dev/image">image</a> package.</li>
-						<li><a href="https://go.dev/blog/image-draw">The Go image/draw package</a> - the fundamentals of the <a href="https://pkg.go.dev/image/draw">image/draw</a> package.</li>
-					</ul>
-					<h4>Modules</h4>
-					<ul>
-						<li><a href="https://go.dev/blog/using-go-modules"></a>Using Go Modules - an introduction to using modules in a simple project.</li>
-						<li><a href="https://go.dev/blog/migrating-to-go-modules">Migrating to Go Modules</a> - converting an existing project to use modules.</li>
-						<li><a href="https://go.dev/blog/publishing-go-modules">Publishing Go Modules</a> - how to make new versions of modules available to others.</li>
-						<li><a href="https://go.dev/blog/v2-go-modules">Go Modules: v2 and Beyond</a> - creating and publishing major versions 2 and higher.</li>
-						<li><a href="https://go.dev/blog/module-compatibility">Keeping Your Modules Compatible</a> - how to keep your modules compatible with prior minor/patch versions.</li>
-					</ul>
-					<h4>Tools</h4>
-					<ul>
-						<li><a href="https://golang.org/doc/articles/go_command"></a>About the Go command - why we wrote it, what it is, what it's not, and how to use it.</li>
-						<li><a href="https://golang.org/doc/gdb">Debugging Go Code with GDB</a></li>
-						<li><a href="https://golang.org/doc/articles/race_detector">Data Race Detector</a> - a manual for the data race detector.</li>
-						<li><a href="https://golang.org/doc/asm">A Quick Guide to Go's Assembler</a> - an introduction to the assembler used by Go.</li>
-						<li><a href="https://go.dev/blog/cgo">C? Go? Cgo!</a> - linking against C code with <a href="https://pkg.go.dev/cmd/cgo">cgo</a>.</li>
-						<li><a href="https://go.dev/blog/godoc">Godoc: documenting Go code</a> - writing good documentation for <a href="https://pkg.go.dev/golang.org/x/tools/cmd/godoc">godoc</a>.</li>
-						<li><a href="https://go.dev/blog/pprof"></a>Profiling Go Programs</li>
-						<li><a href="https://go.dev/blog/race-detector"></a>Introducing the Go Race Detector - an introduction to the race detector.</li>
-					</ul>
-				</article>
-			</section>
-	
-			<section class="main-section" id="talks">
-				<header>Talks</header>
-				<article>
-					<img class="gopher" src="/images/talks.png" alt="gopher-image">
-					<h4><a href="https://research.swtch.com/gotour">A Video Tour of Go</a></h4>
-					<p>
-						Three things that make Go fast, fun, and productive: interfaces, reflection,
-						and concurrency. Builds a toy web crawler to demonstrate these.
-					</p>
-					<h4><a href="https://vimeo.com/53221560">Code that grows with grace</a></h4>
-					<p>
-						One of Go's key design goals is code adaptability; that it should be easy to take
-						a simple design and build upon it in a clean and natural way. In this talk Andrew 
-						Gerrand describes a simple "chat roulette" server that matches pairs of incoming 
-						TCP connections, and then use Go's concurrency mechanisms, interfaces, and standard 
-						library to extend it with a web interface and other features. While the function of
-						the program changes dramatically, Go's flexibility preserves the original design as it grows.	
-					</p>
-					<h4><a href="https://www.youtube.com/watch?v=f6kdp27TYZs">Go Concurrency Patterns</a></h4>
-					<p>
-						Concurrency is the key to designing high performance network services. Go's concurrency
-						primitives (goroutines and channels) provide a simple and efficient means of expressing
-						concurrent execution. In this talk we see how tricky concurrency problems can be solved
-						gracefully with simple Go code.
-					</p>
-					<h4><a href="https://www.youtube.com/watch?v=QDDwwePbDtw">Advanced Go Concurrency Patterns</a></h4>
-					<p>
-						This talk expands on the Go Concurrency Patterns talk to dive deeper into Go's concurrency primitives.
-					</p>
-					<h4>More</h4>
-					<p>
-						See the <a href="https://talks.golang.org/">Go Talks site</a> and <a href="https://github.com/golang/go/wiki/GoTalks">wiki page</a> for more Go talks.
-					</p>
-				</article>
-			</section>
-		</main>
+			    <section class="main-section" id="blog">
+					<header>From the Go Blog</header>
+					<article>
+						<p>The <span><a href="https://go.dev/blog/">official blog of the Go project</a></span>, featuring news and in-depth articles by the Go team and guests.</p>
+						<h4>Language</h4>
+						<ul>
+							<li><a href="https://go.dev/blog/json-rpc">JSON-RPC: a tale of interfaces</a></li>
+							<li><a href="https://go.dev/blog/declaration-syntax">Go's Declaration Syntax</a></li>
+						    <li><a href="https://go.dev/blog/defer-panic-and-recover">Defer, Panic, and Recover</a></li>
+						    <li><a href="https://go.dev/blog/concurrency-timeouts">Go Concurrency Patterns: Timing out, moving on</a></li>
+						    <li><a href="https://go.dev/blog/slices-intro">Go Slices: usage and internals</a></li>
+						    <li><a href="https://go.dev/blog/gif-decoder">A GIF decoder: an exercise in Go interfaces</a></li>
+						    <li><a href="https://go.dev/blog/error-handling-and-go">Error Handling and Go</a></li>
+						    <li><a href="https://go.dev/blog/organizing-go-code">Organizing Go code</a></li>
+					    </ul>
+					    <h4>Packages</h4>
+					    <ul>
+						    <li><a href="https://go.dev/blog/json">JSON and Go</a> - using the <a href="https://pkg.go.dev/encoding/json">json</a> package.</li>
+						    <li><a href="https://go.dev/blog/gob">Gobs of data</a> - the design and use of the <a href="https://pkg.go.dev/encoding/gob">gob</a> package.</li>
+						    <li><a href="https://go.dev/blog/laws-of-reflection">The Laws of Reflection</a> - the fundamentals of the <a href="https://pkg.go.dev/reflect">reflect</a> package.</li>
+						    <li><a href="https://go.dev/blog/image">The Go image package</a> - the fundamentals of the <a href="https://pkg.go.dev/image">image</a> package.</li>
+						    <li><a href="https://go.dev/blog/image-draw">The Go image/draw package</a> - the fundamentals of the <a href="https://pkg.go.dev/image/draw">image/draw</a> package.</li>
+					    </ul>
+					    <h4>Modules</h4>
+					    <ul>
+							<li><a href="https://go.dev/blog/using-go-modules"></a>Using Go Modules - an introduction to using modules in a simple project.</li>
+						    <li><a href="https://go.dev/blog/migrating-to-go-modules">Migrating to Go Modules</a> - converting an existing project to use modules.</li>
+						    <li><a href="https://go.dev/blog/publishing-go-modules">Publishing Go Modules</a> - how to make new versions of modules available to others.</li>
+						    <li><a href="https://go.dev/blog/v2-go-modules">Go Modules: v2 and Beyond</a> - creating and publishing major versions 2 and higher.</li>
+						    <li><a href="https://go.dev/blog/module-compatibility">Keeping Your Modules Compatible</a> - how to keep your modules compatible with prior minor/patch versions.</li>
+					    </ul>
+					    <h4>Tools</h4>
+					    <ul>
+							<li><a href="https://golang.org/doc/articles/go_command"></a>About the Go command - why we wrote it, what it is, what it's not, and how to use it.</li>
+						    <li><a href="https://golang.org/doc/gdb">Debugging Go Code with GDB</a></li>
+						    <li><a href="https://golang.org/doc/articles/race_detector">Data Race Detector</a> - a manual for the data race detector.</li>
+						    <li><a href="https://golang.org/doc/asm">A Quick Guide to Go's Assembler</a> - an introduction to the assembler used by Go.</li>
+						    <li><a href="https://go.dev/blog/cgo">C? Go? Cgo!</a> - linking against C code with <a href="https://pkg.go.dev/cmd/cgo">cgo</a>.</li>
+						    <li><a href="https://go.dev/blog/godoc">Godoc: documenting Go code</a> - writing good documentation for <a href="https://pkg.go.dev/golang.org/x/tools/cmd/godoc">godoc</a>.</li>
+						    <li><a href="https://go.dev/blog/pprof"></a>Profiling Go Programs</li>
+						    <li><a href="https://go.dev/blog/race-detector"></a>Introducing the Go Race Detector - an introduction to the race detector.</li>
+					    </ul>
+				    </article>
+			    </section>
+			
+			    <section class="main-section" id="talks">
+					<header>Talks</header>
+					<article>
+						<img class="gopher" src="/images/talks.png" alt="gopher-image">
+						<h4><a href="https://research.swtch.com/gotour">A Video Tour of Go</a></h4>
+						<p>
+							Three things that make Go fast, fun, and productive: interfaces, reflection,
+							and concurrency. Builds a toy web crawler to demonstrate these.
+						</p>
+						<h4><a href="https://vimeo.com/53221560">Code that grows with grace</a></h4>
+						<p>
+							One of Go's key design goals is code adaptability; that it should be easy to take
+							a simple design and build upon it in a clean and natural way. In this talk Andrew 
+							Gerrand describes a simple "chat roulette" server that matches pairs of incoming 
+							TCP connections, and then use Go's concurrency mechanisms, interfaces, and standard 
+							library to extend it with a web interface and other features. While the function of
+							the program changes dramatically, Go's flexibility preserves the original design as it grows.	
+						</p>
+						<h4><a href="https://www.youtube.com/watch?v=f6kdp27TYZs">Go Concurrency Patterns</a></h4>
+						<p>
+							Concurrency is the key to designing high performance network services. Go's concurrency
+							primitives (goroutines and channels) provide a simple and efficient means of expressing
+							concurrent execution. In this talk we see how tricky concurrency problems can be solved
+							gracefully with simple Go code.
+					    </p>
+						<h4><a href="https://www.youtube.com/watch?v=QDDwwePbDtw">Advanced Go Concurrency Patterns</a></h4>
+						<p>
+							This talk expands on the Go Concurrency Patterns talk to dive deeper into Go's concurrency primitives.
+						</p>
+						<h4>More</h4>
+						<p>
+							See the <a href="https://talks.golang.org/">Go Talks site</a> and <a href="https://github.com/golang/go/wiki/GoTalks">wiki page</a> for more Go talks.
+						</p>
+				    </article>
+			    </section>
+		    </main>
+	    </div>
 	</body>
-	</html>
+</html>

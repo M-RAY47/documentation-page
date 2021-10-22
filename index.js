@@ -11,8 +11,8 @@ app.use(express.static(__dirname + "/public"));
 app.use("*/css", express.static(__dirname + "public/css"));
 app.use("*/images", express.static(__dirname + "public/images"));
 
-app.listen(8080,() => {
-	console.log("Documentation is listening on 8080!");
+app.listen(3000,() => {
+	console.log("Documentation is listening on 3000!");
 })
 
 

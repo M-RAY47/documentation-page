@@ -7,22 +7,23 @@ body {
 
 .diviser {
     display: grid;
+    width: 100%;
     grid-template-columns: minmax(300px, auto) 1fr;
-    grid-template-areas: "navbar mainContent";
-    grid-gap: 30px;
+    grid-template-areas: "navbar main";
+    grid-gap: 20px;
 }
 
 @media screen and (max-width: 750px) {
     .diviser {
         grid-template-columns: 1fr;
-        grid-template-areas: "navbar mainContent";
+        grid-template-areas: "navbar main";
     }
     
     #navbar {
         position: inherit;
     }
     #main-doc{
-        position: relative;
+        position: inherit;
     }
 }
 
@@ -43,7 +44,7 @@ a:hover {
     text-align: center;
     color: rgb(4, 43, 38);
     display: block;
-    padding: 10px 30px;
+    padding: 20px 15px;
     cursor: pointer;
     border:1px solid #4d4e53;
 }
@@ -68,8 +69,8 @@ header {
 }
 
 #main-doc {
-    grid-area: mainContent;
-    position: absolute;
+    grid-area: main;
+    position: relative;
 }
 .nav-link {
     font-size: 1.5em;

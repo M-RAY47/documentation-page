@@ -14,10 +14,3 @@ app.use("*/images", express.static(__dirname + "public/images"));
 app.listen(3000,() => {
 	console.log("Documentation is listening on 3000!");
 })
-
-
-
-
-
-
-module.exports = app;

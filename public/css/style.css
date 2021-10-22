@@ -16,8 +16,8 @@ body {
 
 @media screen and (max-width: 750px) {
     .diviser {
-        grid-template-rows:  1fr;
-        grid-template-areas: "navbar navbar" "main main";
+        grid-template-columns:  1fr;
+        grid-template-areas: "navbar" "main";
     }
     
     nav#navbar{

@@ -1,6 +1,6 @@
 body {
-	background-color: rgb(240, 248, 255);
-	color: rgb(31, 70, 105);
+	background-color: #fff;
+	color: #3e4042;
     font-weight: 100;
     /* background-image: url(/images/backgroundImg.jpg); */
 }
@@ -8,6 +8,7 @@ body {
 .diviser {
     display: grid;
     width: 100%;
+    margin: 0 auto;
     grid-template-columns: minmax(300px, auto) 1fr;
     grid-template-areas: "navbar main";
     grid-gap: 20px;
@@ -15,20 +16,20 @@ body {
 
 @media screen and (max-width: 750px) {
     .diviser {
-        grid-template-columns: 1fr;
-        grid-template-areas: "navbar main";
+        grid-template-rows:  1fr;
+        grid-template-areas: "navbar navbar" "main main";
     }
     
-    #navbar {
+    nav#navbar{
         position: inherit;
     }
-    #main-doc{
-        position: inherit;
-    }
+
 }
 
 a{
-    text-decoration:none
+    text-decoration:none;
+	color: #007d9c;
+    
 }
 a:hover {
     color: rgb(9, 155, 155);
@@ -47,6 +48,7 @@ a:hover {
     padding: 20px 15px;
     cursor: pointer;
     border:1px solid #4d4e53;
+    margin: auto;
 }
 
 #navbar a:hover {
@@ -60,8 +62,8 @@ header {
 
 /* code {
     background-color: #ccc;
-    display: block;
-} */
+    display: block; */
+/* } */
 #main-doc header {
     text-align: left;
     font: size 1.5em;
@@ -70,8 +72,8 @@ header {
 
 #main-doc {
     grid-area: main;
-    position: relative;
 }
+
 .nav-link {
     font-size: 1.5em;
 }

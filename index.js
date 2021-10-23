@@ -1,6 +1,6 @@
 let express  = require("express");
 let app = express();
-console.log("I am running from the server");
+
 // Load the page to the URL
 app.get("/", (req,res) => {
 	res.sendFile(__dirname + "/views/index.html");
@@ -11,6 +11,8 @@ app.use(express.static(__dirname + "/public"));
 app.use("*/css", express.static(__dirname + "public/css"));
 app.use("*/images", express.static(__dirname + "public/images"));
 
-app.listen(3000,() => {
-	console.log("Documentation is listening on 3000!");
+
+const port = process.env.PORT || 3000 ;
+app.listen(port, ()=>{
+	console.log("Weatherly app is listening on port" + port + "!");
 })

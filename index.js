@@ -14,5 +14,5 @@ app.use("*/images", express.static(__dirname + "public/images"));
 
 const port = process.env.PORT || 3000 ;
 app.listen(port, ()=>{
-	console.log("Weatherly app is listening on port" + port + "!");
+	console.log("Documentation app is listening on port" + port + "!");
 })
